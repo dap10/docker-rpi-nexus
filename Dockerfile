@@ -1,4 +1,4 @@
-FROM dap10/rpi-openjdk
+FROM dap10/docker-rpi-openjdk
 
 RUN wget https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.2.0-01-unix.tar.gz -O /tmp/nexus-3.2.0-01-unix.tar.gz && \
         useradd -r -u 200 -m -c "nexus role account" -d /opt/sonatype-work -s /bin/false nexus && \
